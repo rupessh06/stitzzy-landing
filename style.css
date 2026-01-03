@@ -61,7 +61,7 @@ body {
 }
 
 .section {
-  padding: 80px 20px;
+  padding: 100px 20px;
   text-align: center;
 }
 
@@ -69,6 +69,10 @@ body {
   font-size: 2rem;
   color: #1565c0;
   margin-bottom: 20px;
+}
+
+.section:nth-child(even) {
+  background: #f8fbff;
 }
 
 .cards .card-grid,
@@ -81,10 +85,16 @@ body {
 }
 
 .card, .step {
-  padding: 20px;
-  border-radius: 12px;
-  background: #f5f9ff;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  padding: 30px 25px;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover, .step:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.12);
 }
 
 .waitlist {
@@ -117,4 +127,18 @@ footer a {
   color: #bbdefb;
   text-decoration: none;
 
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .logo {
+    width: 160px;
+  }
+
+  .section {
+    padding: 70px 15px;
+  }
 }
