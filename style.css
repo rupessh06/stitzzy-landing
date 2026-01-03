@@ -61,7 +61,7 @@ body {
 }
 
 .section {
-  padding: 80px 20px;
+  padding: 100px 20px;
   text-align: center;
 }
 
@@ -142,4 +142,5 @@ footer a {
     padding: 70px 15px;
   }
 }
+
 
